@@ -20,9 +20,14 @@ const About = () => {
   return (
     <>
       <h2 className='head-text'>
-        I possess <span>all</span> the <br /> <span>Skills you need</span>
-        <br />
-        to create Your <span>digital Products.</span>
+        I know that <span>Good Development </span>
+        means{" "}
+        <span>
+          Good Business, <br />{" "}
+        </span>{" "}
+        Hence I possess <span>all</span> the
+        <span> Skills you need </span>
+        to make You a <span>Quality digital Product.</span>
       </h2>
 
       <div className='app__profiles'>
@@ -45,25 +50,6 @@ const About = () => {
           </motion.div>
         ))}
       </div>
-      <br />
-      <br />
-      <h2 className='head-text'>
-        Additionally, i do; <br />
-        <span>
-          Data Analysis, <br />
-          HTML E-mail Template Design,
-          <br />
-          Competition Monitoring, <br />
-          Analytics Interpretation and Reporting,
-          <br />
-          Blog Customization/Management,
-          <br />
-          Search Engine Optimization (SEO),
-          <br />
-          Usability Testing,
-          <br /> among Others.
-        </span>
-      </h2>
     </>
   );
 };

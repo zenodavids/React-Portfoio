@@ -154,3 +154,13 @@
     top: -25px;
   }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (max-width: 768px) {
+//   .app__work-filter-item {
+//     & {
+//       background-color: var(--secondary-color);
+//       color: #fff;
+//     }
+//   }
+// }

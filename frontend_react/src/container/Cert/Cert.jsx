@@ -49,7 +49,7 @@ const Cert = () => {
         {[
           "Web Development",
           "Software Engineering",
-          "BlockChain",
+          "Blockchain",
           "Data Analysis",
           "All",
         ].map((item, index) => (

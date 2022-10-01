@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
@@ -27,16 +28,29 @@ const Header = () => (
     >
       <div className='app__header-badge'>
         <div className='badge-cmp app__flex'>
-          <img src={images.logo} style={{ width: 100 }} alt='logo' />
+          <span style={{ fontSize: "2.5rem" }}>👋🏽</span>
           <div style={{ marginLeft: 20 }}>
-            <p
-              className='p-text'
-              style={{ color: "black", fontWeight: "bold" }}
-            >
-              👋🏽 Hello, My name is Chidozie
-            </p>
-            <p className='p-text'>Web Developer, Software Engineer</p>
+            <p className='p-text'>Hello, I am</p>
+            <h1 className='head-text'>Chidozie</h1>
           </div>
+        </div>
+
+        <div className='tag-cmp app__flex'>
+          <p className='typewriter-text'>
+            <Typewriter
+              className='typewriter-text'
+              style={{ color: "white" }}
+              options={{
+                strings: [
+                  "Web Developer",
+                  "Solidity Developer",
+                  "Software Engineer",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </p>
         </div>
       </div>
     </motion.div>
@@ -62,7 +76,7 @@ const Header = () => (
       whileInView={scaleVariants.whileInView}
       className='app__header-circles'
     >
-      {[images.react, images.python, images.git].map((circle, index) => (
+      {[images.react, images.ethereum, images.solidity].map((circle, index) => (
         <div className='circle-cmp app__flex' key={`circle-${index}`}>
           <img src={circle} alt='profile_bg' />
         </div>
